@@ -4,27 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
   <style>
     .text {
-      margin-top: 100px;
+      margin: 100px 0;
       width: 200px;
-      transform: rotate(45deg);
+      transform: rotate(-45deg);
       background-color: deeppink;
       text-align: center;
       color: #fff;
     }
-    /* .scale {
-
-    } */
+    .scale-1 {
+      width: 200px;
+      text-align: center;
+      background-color: deeppink;
+      color: #fff;
+      transform: scale(0.5, 2);
+    }
+    .skew-1 {
+      width: 200px;
+      text-align: center;
+      background-color: deeppink;
+      color: #fff;
+      transform: skew(15deg, -15deg);
+    }
+    .skew-2 {
+      margin-top: 45px;
+      width: 200px;
+      text-align: center;
+      background-color: deeppink;
+      color: #fff;
+      transform: skew(45deg);
+    }
+    .translate-1 {
+      margin-top: 45px;
+      width: 200px;
+      text-align: center;
+      background-color: deeppink;
+      color: #fff;
+      transform: translate(10px, 10px);
+    }
+    .multi-1 {
+      width: 200px;
+      text-align: center;
+      background-color: deeppink;
+      color: #fff;
+      transform: rotate(-15deg) translate(10px, 10px) scale(0.5, 2);
+    }
   </style>
 </head>
+
 <body>
+  <p>旋转</p>
   <div class="text">
     <span>实例文字</span>
   </div>
-  <!-- <p>缩放</p>
-  <div class="scale">
-
-  </div> -->
+  <p>缩放</p>
+  <div class="scale-1">
+    <span>实例文字</span>
+  </div>
+  <p>倾斜</p>
+  <div class="skew-1">
+    <span>实例文字</span>
+  </div>
+  <div class="skew-2">
+    <span>实例文字（设置一个值）</span>
+  </div>
+  <p>移动</p>
+  <div class="translate-1">
+    <span>实例文字</span>
+  </div>
+  <p>旋转，移动，缩放</p>
+  <div class="multi-1">
+    <span>实例文字</span>
+  </div>
 </body>
 </html>
