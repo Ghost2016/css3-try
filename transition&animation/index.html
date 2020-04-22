@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/css/normalize.css/normalize.css">
+  <style>
+    .text {
+      border: 1px solid rgb(146, 251, 132);
+      padding: 8px 0;
+      border-radius: 40px;
+      width: 200px;
+      background-color: rgb(146, 251, 132);
+      text-align: center;
+      color: #fff;
+      transition: color 0.1s linear, background 0.1s linear, transform 0.1s linear;
+    }
+    .text:hover {
+      color: rgb(146, 251, 132);
+      background-color: #fff;
+      transform: translate(20px);
+      transform-origin: right bottom;
+    }
+    @-webkit-keyframes mycolor{
+      0% {
+        background-color: red;
+      }
+      14% {
+        background-color: orange;
+      }
+      28% {
+        background-color: yellow;
+      }
+      42% {
+        background-color: green;
+      }
+      57% {
+        background-color: greenyellow;
+      }
+      71% {
+        background-color: blue;
+      }
+      85% {
+        background-color: purple;
+      }
+      100% {
+        background-color: red;
+      }
+    }
+    .text-1 {
+      color: #fff;
+      padding: 8px 0;
+      border-radius: 40px;
+      width: 200px;
+      text-align: center;
+      animation-name: mycolor;
+      animation-timing-function: linear;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes fadeIn{
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .fade-in {
+      animation-name: fadeIn;
+      animation-timing-function: linear;
+      animation-duration: 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <p>transition</p>
+  <div class="text">
+    <span>实例文字</span>
+  </div>
+  <p>animation</p>
+  <div class="text-1">
+    <span>实例文字</span>
+  </div>
+  <p>淡入</p>
+  <div class="image fade-in">
+    <img src="../image/button.png">
+  </div>
+</body>
+</html>
